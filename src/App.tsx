@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {TASKS} from './TASKS';
+import {Tasks} from './Tasks';
 
 
 // Hi Guys!
@@ -126,8 +126,8 @@ function App() {
 
     return (
         <div className="App">
-            <TASKS data={data1}/>
-            <TASKS data={data2}/>
+            <Tasks data={data1}/>
+            <Tasks data={data2}/>
         </div>
     );
 }

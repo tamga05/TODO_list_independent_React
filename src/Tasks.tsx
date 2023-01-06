@@ -1,33 +1,29 @@
 import React from 'react';
 
 
-export type StudentsType = Array<string>
-
 export type TaskType = {
     taskId: number,
     title: string,
     isDone: boolean
 }
 
-export type TasksType = Array<TaskType>
-
 export type DataType = {
     title: string,
-    tasks: TasksType,
-    students: StudentsType
+    tasks: Array<TaskType>,
+    students: Array<string>
 }
 
-export type TASKSType = {
+export type TasksType = {
     data: DataType
 }
 
 
-export const TASKS = (props: TASKSType) => {
+export const Tasks = (props: TasksType) => {
     return (
         <div>
             <h3>{props.data.title}</h3>
             <ul>
-                {props.data.tasks.map((el) => {
+                {props.data.tasks.map(el => {
                     return (
                         <li>
                             <span>{el.title}</span>
@@ -37,12 +33,13 @@ export const TASKS = (props: TASKSType) => {
                 })}
             </ul>
             <ul>
-                <li>{props.data.students.map(el => {
-                    return (
+                {
+                props.data.students.map(el=>{
+                    return(
                         <li>{el}</li>
-                    );
-                })}
-                </li>
+                    )
+                })
+            }
             </ul>
         </div>
     );
