@@ -1,17 +1,18 @@
 import React from 'react';
+import {DataType} from './App';
 
 
-export type TaskType = {
-    taskId: number,
-    title: string,
-    isDone: boolean
-}
-
-export type DataType = {
-    title: string,
-    tasks: Array<TaskType>,
-    students: Array<string>
-}
+// export type TaskType = {
+//     taskId: number,
+//     title: string,
+//     isDone: boolean
+// }
+//
+// export type DataType = {
+//     title: string,
+//     tasks: Array<TaskType>,
+//     students: Array<string>
+// }
 
 export type TasksType = {
     data: DataType
