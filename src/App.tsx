@@ -20,7 +20,6 @@ export type DataType = {
     students: Array<string>
 }
 
-
 function App() {
     const data1 = {
         title: 'What to do',
