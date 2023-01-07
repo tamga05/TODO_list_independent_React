@@ -9,14 +9,14 @@ import {Tasks} from './Tasks';
 // -Don't forget to assign types to our data.
 
 export type TaskType = {
-    taskId: number,
-    title: string,
+    taskId: number
+    title: string
     isDone: boolean
 }
 
 export type DataType = {
-    title: string,
-    tasks: Array<TaskType>,
+    title: string
+    tasks: Array<TaskType>
     students: Array<string>
 }
 

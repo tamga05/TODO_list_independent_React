@@ -5,25 +5,23 @@ type TasksType = {
     data: DataType
 }
 
-export const Tasks = (props: TasksType) => {
+export const Tasks = (propps: TasksType) => {
     return (
         <div>
-            <h3>{props.data.title}</h3>
+            <h3>{propps.data.title}</h3>
             <ul>
-                {props.data.tasks.map(el => {
+                {propps.data.tasks.map(el => {
                     return (
-                        <li><span>{el.title}</span><input type={'checkbox'} checked={el.isDone}/></li>
+                        <li>{<span>{el.title}</span>}<input type="checkbox" checked={el.isDone}/></li>
                     );
                 })}
             </ul>
             <ul>
-                {
-                    props.data.students.map(el => {
-                        return (
-                            <li>{el}</li>
-                        );
-                    })
-                }
+                {propps.data.students.map(el => {
+                    return (
+                        <li>{el}</li>
+                    );
+                })}
             </ul>
         </div>
     );
