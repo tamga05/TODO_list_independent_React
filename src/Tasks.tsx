@@ -2,26 +2,27 @@ import React from 'react';
 import {DataType} from './App';
 
 type TasksType = {
-    data: DataType
+    data: DataType;
 }
 
-export const Tasks = (propps: TasksType) => {
+export const Tasks = (props: TasksType) => {
     return (
         <div>
-            <h3>{propps.data.title}</h3>
+            <h3>{props.data.title}</h3>
             <ul>
-                {propps.data.tasks.map(el => {
+                {props.data.tasks.map(el => {
                     return (
-                        <li>{<span>{el.title}</span>}<input type="checkbox" checked={el.isDone}/></li>
+                        <li><span>{el.title}</span><input type={'checkbox'} checked={el.isDone}/></li>
                     );
                 })}
             </ul>
             <ul>
-                {propps.data.students.map(el => {
-                    return (
-                        <li>{el}</li>
-                    );
-                })}
+                {props.data.students.map(el => {
+                        return (
+                            <li>{el}</li>
+                        );
+                    }
+                )}
             </ul>
         </div>
     );
