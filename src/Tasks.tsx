@@ -17,13 +17,11 @@ export const Tasks = (props: TasksType) => {
                 })}
             </ul>
             <ul>
-                <li>
-                    {props.data.students.map(el => {
-                        return (
-                            <li>{el}</li>
-                        );
-                    })}
-                </li>
+                {props.data.students.map(el => {
+                    return (
+                        <li>{el}</li>
+                    );
+                })}
             </ul>
         </div>
     );
