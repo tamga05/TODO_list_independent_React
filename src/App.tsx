@@ -17,7 +17,7 @@ export type TaskType = {
 export type DataType = {
     title: string
     tasks: Array<TaskType>
-    students: Array<string>;
+    students: Array<string>
 }
 
 function App() {
