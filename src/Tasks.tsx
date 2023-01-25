@@ -1,7 +1,9 @@
 import React from 'react';
 import {DataType} from './App';
 
-type TasksType = { data: DataType }
+type TasksType = {
+    data: DataType
+}
 
 export const Tasks = (props: TasksType) => {
     return (
@@ -10,10 +12,7 @@ export const Tasks = (props: TasksType) => {
             <ul>
                 {props.data.tasks.map(el => {
                     return (
-                        <li>
-                            <span>{el.title}</span>
-                            <input type="checkbox" checked={el.isDone}/>
-                        </li>
+                        <li><span>{el.title}</span><input type="checkbox" checked={el.isDone}/></li>
                     );
                 })}
             </ul>
