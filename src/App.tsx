@@ -8,7 +8,7 @@ import {Tasks} from './Tasks';
 // -You have 2 arrays. You should create a new component TASKS, where you will render these arrays.
 // -Don't forget to assign types to our data.
 
-export type TaskType = {
+type TaskType = {
     taskId: number
     title: string
     isDone: boolean
