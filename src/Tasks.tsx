@@ -3,7 +3,7 @@ import {DataType} from './App';
 
 type TasksType = {
     data: DataType
-};
+}
 
 export const Tasks = (props: TasksType) => {
     return (
@@ -26,4 +26,3 @@ export const Tasks = (props: TasksType) => {
         </div>
     );
 };
-
