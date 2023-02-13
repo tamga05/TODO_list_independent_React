@@ -22,7 +22,7 @@ export type DataType = {
 
 function App() {
     const data1 = {
-        title: 'What to do',
+        title: 'What to do 1',
         tasks: [
             {taskId: 1, title: 'HTML&CSS2', isDone: true},
             {taskId: 2, title: 'JS2', isDone: true}
@@ -76,7 +76,7 @@ function App() {
         ]
     };
     const data2 = {
-        title: 'What to learn',
+        title: 'What to learn 2',
         tasks: [
             {taskId: 1, title: 'HTML&CSS', isDone: true},
             {taskId: 2, title: 'JS', isDone: true}
