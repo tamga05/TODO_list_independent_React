@@ -26,3 +26,4 @@ export const Tasks = (props: TasksType) => {
         </div>
     );
 };
+
