@@ -16,7 +16,7 @@ export type TaskType = {
 
 export type DataType = {
     title: string
-    tasks: Array<TaskType>
+    tasks: TaskType[]
     students: Array<string>
 }
 
