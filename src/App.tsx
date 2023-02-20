@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Tasks} from './Tasks';
+import Tasks from './Tasks';
 
 
 // Hi Guys!
@@ -17,7 +17,7 @@ export type TaskType = {
 export type DataType = {
     title: string
     tasks: TaskType[]
-    students: Array<string>
+    students: string[]
 }
 
 function App() {
